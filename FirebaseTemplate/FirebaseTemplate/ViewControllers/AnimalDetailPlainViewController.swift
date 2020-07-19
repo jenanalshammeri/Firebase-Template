@@ -23,6 +23,7 @@ class AnimalDetailPlainViewController: UIViewController
     {
         super.viewDidLoad()
         configureUI()
+        self.navigationItem.title = animalData.name
         setAnimalsDetails()
         // Do any additional setup after loading the view.
     }
@@ -30,7 +31,7 @@ class AnimalDetailPlainViewController: UIViewController
     
     func setAnimalsDetails()
     {
-        animalName.text = animalData.name
+        //animalName.text = animalData.name
         animalImg.image = UIImage(named: animalData.name)
         animalDescription.text = animalData.description
         animalShelter.text = animalData.shelter
@@ -42,6 +43,9 @@ class AnimalDetailPlainViewController: UIViewController
     animalShelter.layer.cornerRadius = 20
     bookAppt.layer.cornerRadius = 20
     }
+    
+    
+    
     
     
     

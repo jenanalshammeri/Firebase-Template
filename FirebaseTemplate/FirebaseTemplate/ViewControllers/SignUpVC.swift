@@ -19,6 +19,7 @@ class SignUpVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "SIGN UP"
 
         // Do any additional setup after loading the view.
     }

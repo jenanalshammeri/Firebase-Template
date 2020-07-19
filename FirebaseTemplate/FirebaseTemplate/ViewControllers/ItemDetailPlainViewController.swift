@@ -23,6 +23,7 @@ class ItemDetailPlainViewController: UIViewController
     {
         super.viewDidLoad()
         configureUI()
+        self.navigationItem.title = productData.name
         setProductDetails()
         // Do any additional setup after loading the view.
     }
@@ -30,7 +31,7 @@ class ItemDetailPlainViewController: UIViewController
     
     func setProductDetails()
     {
-        productName.text = productData.name
+        //productName.text = productData.name
         productImg.image = UIImage(named: productData.name)
         productDescription.text = productData.description
         productsStore.text = productData.price
